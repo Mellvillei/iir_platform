@@ -38,6 +38,17 @@
 
 ##  실행 방법 
 
+# HOST PC
+* ElasticSearch // bin/elasticsearch.bat 실행 (관리자 계정)
+
+* Kibana // bin/kibana.bat 실행 (관리자 계정)
+
+* Filebeat // filebeat 폴더 내에서 CMD -> filebeat.exe
+
+* Logstash // logstash 폴더 내에서 CMD -> logstash.bat -f logstash.conf
+  > -f flag는 설정파일을 로드한다.
+
+# Win7sp1 32bit
 * Win7sp1 sysmon vm 환경 실행
 
 * Win7sp1 sysmon vm 환경에서 sysmon 서비스 실행(관리자 계정)
@@ -47,15 +58,10 @@
 * Win7sp1 sysmon vm 환경에서 winlogbeat 실행(관리자 계정)
   > winlogbeat.exe -c winlogbeat.yml
 
-* Elastic Kibana 실행(관리자 계정)
-  > bin/kibana.bat
-
-* Elasticsearch 실행(관리자 계정)
-  > bin/elasticsearch.bat
-
+# Ubuntu 18.04 64bit
 * Ubuntu 18.04 64bit 환경에서 Elasticalert 실행
   >/elastalert  
-  >elastalert --verbose --start  --config <config.yaml> --rule <error.yaml>
+  >python3 -m elastalert.elastalert --verbose --start  --config <config.yaml> --rule <error.yaml>
  
 ## 메뉴얼 
 
@@ -117,6 +123,8 @@
 [[ Elastalert ]]
 * pip install 오류
   > python version 3.6 다운
+  > python으로 실행 안될 시 pip 오류 설정 확인 후 python3 버전으로 설치
+  > python3 으로 실행해본 후 여전히 안될 시 기본으로 설정된 python의 버전 설정을 바꾼다.
 ## Contributors
 * maxup37
 * idk3669
