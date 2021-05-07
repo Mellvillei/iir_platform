@@ -3,8 +3,8 @@
 ## Index
 ### Install
   > [HOST PC](#host-pc)
-  > [Windows](#windows-7-32bitVM)
-  > [Ubuntu](#ubuntu-1804-64bitVM)
+  > [Windows](#Win7sp1-32bitvm)
+  > [Ubuntu](#ubuntu-1804-64bitvm)
 ### 실행방법
   > [HOST PC](#host-pc-1)
   > 
