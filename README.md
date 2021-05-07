@@ -1,7 +1,7 @@
 # Intelligent Incident Response Platform
 
 ## Index
-### [Install](#install)
+### [Install](##install)
   > [HOST PC](#host-pc)
   > [Ubuntu](#ubuntu-1804-64bit)
 ### [실행방법](#how-to-run)
