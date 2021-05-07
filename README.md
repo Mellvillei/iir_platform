@@ -1,6 +1,6 @@
 # Intelligent Incident Response Platform
 
-## Index
+## INDEX
 ### Install
   - [HOST PC](#host-pc)
   - [Windows](#Win7sp1-32bitvm)
@@ -84,14 +84,13 @@
 * Kibana // bin/kibana.bat 실행 (관리자 계정)
 
 ### [Win7sp1 32bit](#index)(VM)
-* Win7sp1 sysmon vm 환경 실행
-
 * Win7sp1 sysmon vm 환경에서 sysmon 서비스 실행(관리자 계정)
   > sysmon.exe -i %configfile%
     (기존에 설치했다면 필요 없음)
 
 * Win7sp1 sysmon vm 환경에서 winlogbeat 실행(관리자 계정)
   > winlogbeat.exe -c winlogbeat.yml
+  > 첫 설치 후 서비스에 실행되어 있으면 생략 가능
 
 ### [Ubuntu 18.04 64bit](#index)(VM)
 * Ubuntu 18.04 64bit 환경에서 Elasticalert 실행
