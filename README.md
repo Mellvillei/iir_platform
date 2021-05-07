@@ -30,7 +30,7 @@
     > https://github.com/SwiftOnSecurity/sysmon-config
 
 ## INSTALL
-### HOST PC(#index)
+### [HOST PC](#index)
 * Elastic Stack
   - Elastic Elasticsearch 설치 ( 본 글은 7.11.2 version 사용. )
     > https://www.elastic.co/kr/downloads/past-releases#elasticsearch
@@ -41,9 +41,9 @@
   - Elastic Logstash (Optional) 설치
     > https://www.elastic.co/kr/downloads/logstash
    
-### Windows 7 32bit(VM)(#index)
+### [Windows 7 32bit](VM)(#index)
 
-### Ubuntu 18.04 64bit(VM)(#index)
+### [Ubuntu 18.04 64bit](VM)(#index)
   - python 설치
   - elasticsearch 설치
 
