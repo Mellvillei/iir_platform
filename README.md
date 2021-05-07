@@ -72,12 +72,10 @@
   - python 3.6 version 설치
     > apt install python3 <br>
     > sudo apt install python3-pip
-    
-  - Yelp의 elastalert
-    > https://github.com/Yelp/elastalert
 
   - elastalert 설치
-    > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
+    > https://elastalert.readthedocs.io/en/latest/running_elastalert.html <br>
+    > 본 github 과정은 매뉴얼 내 pip install이 아닌 git clone을 통해 설치
 
 ## How To Run
 ### [HOST PC](#index)
