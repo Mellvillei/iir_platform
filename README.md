@@ -94,8 +94,9 @@
 
 ### [Ubuntu 18.04 64bit](#index)(VM)
 * Ubuntu 18.04 64bit 환경에서 Elasticalert 실행
-  >/elastalert  
-  >python3 -m elastalert.elastalert --verbose --start  --config <config.yaml> --rule <error.yaml>
+  >/elastalert  <br>
+  >python3 -m elastalert.elastalert --verbose --start  --config <config.yaml> --rule <예제파일>  <br>
+  > <예제파일>에 들어갈 룰 파일은 https://github.com/Yelp/elastalert/blob/master/example_rules/example_frequency.yaml 을 사용한다.
  
 ## 메뉴얼 
 
@@ -106,7 +107,8 @@
   > https://www.elastic.co/guide/en/elastic-stack-get-started/7.6/get-started-elastic-stack.html#install-elasticsearch
 
 * elastalert
-  > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
+  > https://elastalert.readthedocs.io/en/latest/running_elastalert.html <br>
+  > rule 기본 틀 : https://github.com/Yelp/elastalert/blob/master/example_rules/example_frequency.yaml 
  
 ## [TroubleShooting](#index)
  [[ windows 7 ]]
