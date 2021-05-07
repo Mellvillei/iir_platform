@@ -10,7 +10,7 @@
   - [Windows](#win7sp1-32bitvm-1)
   - [Ubuntu](#ubuntu-1804-64bitvm-1)
 ### Config 설정
-
+### [TroubleShooting](#troubleshooting)
 
 ##  목표 구성도 참고 
 * Open Source Endpoint monitoring 
@@ -106,8 +106,8 @@
 
 * elastalert
   > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
-  
- ## 오류 수정 
+ 
+## [TroubleShooting](#index)
  [[ windows 7 ]]
  * sysmon 10.x 실행 오류
    > kb2533623 설치 (wevtapi.dll 문제)
