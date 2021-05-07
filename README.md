@@ -1,7 +1,7 @@
 # Intelligent Incident Response Platform
 
 
-[Index](#이쪽)
+[index](#이쪽)
 
 
 ##  목표 구성도 참고 
