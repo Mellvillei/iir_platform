@@ -6,7 +6,8 @@
   > [Windows](#windows-7-32bitVM)
   > [Ubuntu](#ubuntu-1804-64bitVM)
 ### 실행방법
-  > [HOST PC](#host-pc)
+  > [HOST PC](#host-pc-1)
+  > 
 ### Config 설정
 
 
@@ -41,7 +42,7 @@
   - Elastic Logstash (Optional) 설치
     > https://www.elastic.co/kr/downloads/logstash
    
-### [Windows 7 32bit](#index)(VM)
+### [Win7sp1 32bit](#index)(VM)
 
 ### [Ubuntu 18.04 64bit](#index)(VM)
   - python 설치
