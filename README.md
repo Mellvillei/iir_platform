@@ -21,26 +21,20 @@
    ![screenshot](Conceptual_diagram.jpg)
 
 ##  환경 구성 
+* Host PC
+  - ElasticSearch 7.11.2
+  - Kibana 7.11.2
+  - Logstash (optional)
+  
 * Windows 7 32bit (Endpoint 환경) - VM 구성
   - Python 2.7 32bit
-  
-  - Elastic Winlogbeat 7.11.2
- 
+  - Winlogbeat 7.11.2
   - sysmon
-    > https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
-    
   - Red Team Automation (Red Team용 MITRE ATT@CK 기반 malicious attack 발생)
-    > https://github.com/endgameinc/RTA 
-    > (현 github 내 red_ttp_ko를 다운로드 해도 됨.)
-    
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
-    > https://github.com/SwiftOnSecurity/sysmon-config 
-    > (현 github 내 sysmon-config.xml을 다운로드 해도 됨.)
   
 * Ubuntu 18.04 64bit
   - Elastalert 0.2.4 version
-    > https://github.com/Yelp/elastalert
-   
   - python3 
   - pip3
   
@@ -73,7 +67,9 @@
 
 ### [Ubuntu 18.04 64bit](#index)(VM)
   - python 3.6 version 설치
-
+    > apt install python3
+    > sudo apt install python3-pip
+    
   - Yelp의 elastalert
     > https://github.com/Yelp/elastalert
 
