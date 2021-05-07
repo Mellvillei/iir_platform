@@ -30,10 +30,12 @@
     > https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
     
   - Red Team Automation (Red Team용 MITRE ATT@CK 기반 malicious attack 발생)
-    > https://github.com/endgameinc/RTA
+    > https://github.com/endgameinc/RTA 
+    > (현 github 내 red_ttp_ko를 다운로드 해도 됨.)
     
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
-    > https://github.com/SwiftOnSecurity/sysmon-config
+    > https://github.com/SwiftOnSecurity/sysmon-config 
+    > (현 github 내 sysmon-config.xml을 다운로드 해도 됨.)
   
 * Ubuntu 18.04 64bit
   - Elastalert 0.2.4 version
@@ -56,20 +58,21 @@
    
 ### [Win7sp1 32bit](#index)(VM)
   - Red Team Automation (Red Team용 MITRE ATT@CK 기반 malicious attack 발생)
-    > https://github.com/endgameinc/RTA (현 github 내 red_ttp_ko를 다운로드 해도 됨.)
+    > https://github.com/endgameinc/RTA 
+    > (현 github 내 red_ttp_ko를 다운로드 해도 됨.)
  
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
-    > https://github.com/SwiftOnSecurity/sysmon-config
+    > https://github.com/SwiftOnSecurity/sysmon-config 
+    > (현 github 내 sysmon-config.xml을 다운로드 해도 됨.)
     
   - Winlogbeat 7.11.2 version
     > https://www.elastic.co/kr/downloads/past-releases#winlogbeat
     
-  - Sysmon
+  - Sysmon 13.10 version
     > https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
 
 ### [Ubuntu 18.04 64bit](#index)(VM)
-  - python 설치
-  - elasticsearch 설치
+  - python 3.6 version 설치
 
   - Yelp의 elastalert
     > https://github.com/Yelp/elastalert
