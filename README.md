@@ -25,7 +25,7 @@
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
     > https://github.com/SwiftOnSecurity/sysmon-config
 
-## How To INSTALL(#index)
+## How To Install(#index)
 ### HOST PC(#index)
 * Elastic Stack
   - Elastic Elasticsearch 설치 ( 본 글은 7.11.2 version 사용. )
