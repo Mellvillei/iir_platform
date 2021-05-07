@@ -10,7 +10,7 @@
   - [Windows](#win7sp1-32bitvm-1)
   - [Ubuntu](#ubuntu-1804-64bitvm-1)
 ### Config 설정
-### [TroubleShooting](#troubleshooting)
+### [TroubleShooting](#troubleshooting-1)
 
 ##  목표 구성도 참고 
 * Open Source Endpoint monitoring 
