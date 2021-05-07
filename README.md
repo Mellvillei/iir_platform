@@ -2,13 +2,13 @@
 
 ## Index
 ### Install
-  > [HOST PC](#host-pc)
-  > [Windows](#Win7sp1-32bitvm)
-  > [Ubuntu](#ubuntu-1804-64bitvm)
+  - [HOST PC](#host-pc)
+  - [Windows](#Win7sp1-32bitvm)
+  - [Ubuntu](#ubuntu-1804-64bitvm)
 ### 실행방법
-  > [HOST PC](#host-pc-1)
-  > [Windows](#win7sp1-32bitvm-1)
-  > [Ubuntu](#ubuntu-1804-64bitvm-1)
+  - [HOST PC](#host-pc-1)
+  - [Windows](#win7sp1-32bitvm-1)
+  - [Ubuntu](#ubuntu-1804-64bitvm-1)
 ### Config 설정
 
 
