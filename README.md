@@ -3,8 +3,8 @@
 ## Index
 ### Install
   > [HOST PC](#host-pc)
-  > [Windows](#Windows-7-32bit)
-  > [Ubuntu](#ubuntu-1804-64bit)
+  > [Windows](#windows-7-32bit)
+  > [Ubuntu](#ubuntu-18.04-64bit)
 ### 실행방법
   > [HOST PC](#host-pc)
 ### Config 설정
@@ -41,9 +41,9 @@
   - Elastic Logstash (Optional) 설치
     > https://www.elastic.co/kr/downloads/logstash
    
-### [Windows 7 32bit](VM)(#index)
+### [Windows 7 32bit](#index)(VM)
 
-### [Ubuntu 18.04 64bit](VM)(#index)
+### [Ubuntu 18.04 64bit](#index)(VM)
   - python 설치
   - elasticsearch 설치
 
