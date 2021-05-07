@@ -1,7 +1,7 @@
 # Intelligent Incident Response Platform
 
 
-[index](#이쪽)
+[a](#b)
 
 
 ##  목표 구성도 참고 
@@ -42,7 +42,7 @@
 
 ##  실행 방법 
 
-[이쪽](#index)
+[b](#a)
 
 ### HOST PC
 * ElasticSearch // bin/elasticsearch.bat 실행 (관리자 계정)
