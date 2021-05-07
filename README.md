@@ -1,10 +1,14 @@
 # Intelligent Incident Response Platform
 
 ## Index
-### [Install](#how-to-install)
+### Install
   > [HOST PC](#host-pc)
+  > [Windows](#Windows-7-32bit)
   > [Ubuntu](#ubuntu-1804-64bit)
-### [실행방법](#how-to-run)
+### 실행방법
+  > [HOST PC](#host-pc)
+### Config 설정
+
 
 ##  목표 구성도 참고 
 * Open Source Endpoint monitoring 
@@ -25,7 +29,7 @@
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
     > https://github.com/SwiftOnSecurity/sysmon-config
 
-# How To Install(#index)
+## INSTALL
 ### HOST PC(#index)
 * Elastic Stack
   - Elastic Elasticsearch 설치 ( 본 글은 7.11.2 version 사용. )
@@ -37,23 +41,23 @@
   - Elastic Logstash (Optional) 설치
     > https://www.elastic.co/kr/downloads/logstash
    
-### Ubuntu 18.04 64bit(#index)
+### Windows 7 32bit(VM)(#index)
+
+### Ubuntu 18.04 64bit(VM)(#index)
+  - python 설치
+  - elasticsearch 설치
+
   - Yelp의 elastalert
     > https://github.com/Yelp/elastalert
 
   - elastalert 설치
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
-# How To Run(#index)
+## How To Run
 ### HOST PC
 * ElasticSearch // bin/elasticsearch.bat 실행 (관리자 계정)
 
 * Kibana // bin/kibana.bat 실행 (관리자 계정)
-
-* Filebeat // filebeat 폴더 내에서 CMD -> filebeat.exe
-
-* Logstash // logstash 폴더 내에서 CMD -> logstash.bat -f logstash.conf
-  > -f flag는 설정파일을 로드한다.
 
 ### Win7sp1 32bit
 * Win7sp1 sysmon vm 환경 실행
