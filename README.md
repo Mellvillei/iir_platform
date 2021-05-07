@@ -158,9 +158,9 @@
 
 [[ Elastalert ]]
 * pip install 오류
-  > python version 3.6 다운
-  > python으로 실행 안될 시 pip 오류 설정 확인 후 python3 버전으로 설치
-  > python3 으로 실행해본 후 여전히 안될 시 기본으로 설정된 python의 버전 설정을 바꾼다.
+  > python version 3.6 다운 <br>
+  > python으로 실행 안될 시 pip 오류 설정 확인 후 python3 버전으로 설치 <br>
+  > python3 으로 실행해본 후 여전히 안될 시 기본으로 설정된 python의 버전 설정을 바꾼다. <br>
 ## Contributors
 * maxup37
 * idk3669
