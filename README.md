@@ -34,7 +34,7 @@
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
   
 * Ubuntu 18.04 64bit
-  - Elastalert 0.2.4 version
+  - Elastalert 0.2.4 version (git clone 사용)
   - python3 
   - pip3
   
