@@ -2,7 +2,7 @@
 
 ## Index
 
-* [tl1qkf](#tlqkf)
+* [tl1qkf](#tl-qkf)
 
 ##  목표 구성도 참고 
 * Open Source Endpoint monitoring 
@@ -43,7 +43,7 @@
 
 
 
-[tlqkf](#index)
+[tl qkf](#index)
 
 
 ##  실행 방법 
