@@ -1,8 +1,10 @@
 # Intelligent Incident Response Platform
 
 ## Index
-
-* [tl1qkf](#tl-qkf)
+### [Install](#install)
+  > [HOST PC](#host-pc)
+  > [Ubuntu](#ubuntu-1804-64bit)
+### [실행방법](#how-to-run)
 
 ##  목표 구성도 참고 
 * Open Source Endpoint monitoring 
@@ -22,8 +24,9 @@
     > https://github.com/endgameinc/RTA
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
     > https://github.com/SwiftOnSecurity/sysmon-config
-    
-### HOST PC
+
+## INSTALL(#index)
+### HOST PC(#index)
 * Elastic Stack
   - Elastic Elasticsearch 설치 ( 본 글은 7.11.2 version 사용. )
     > https://www.elastic.co/kr/downloads/past-releases#elasticsearch
@@ -34,20 +37,14 @@
   - Elastic Logstash (Optional) 설치
     > https://www.elastic.co/kr/downloads/logstash
    
-* Ubuntu 18.04 64bit 환경
+### Ubuntu 18.04 64bit(#index)
   - Yelp의 elastalert
     > https://github.com/Yelp/elastalert
 
   - elastalert 설치
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
-
-
-## [tl qkf](#index)
-
-
-##  실행 방법 
-(#hello)
+## How To Run(#index)
 ### HOST PC
 * ElasticSearch // bin/elasticsearch.bat 실행 (관리자 계정)
 
