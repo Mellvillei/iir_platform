@@ -7,7 +7,7 @@
   > [Ubuntu](#ubuntu-1804-64bitvm)
 ### 실행방법
   > [HOST PC](#host-pc-1)
-  > 
+  > [Windows](#
 ### Config 설정
 
 
@@ -55,12 +55,12 @@
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
 ## How To Run
-### HOST PC
+### [HOST PC](#index)
 * ElasticSearch // bin/elasticsearch.bat 실행 (관리자 계정)
 
 * Kibana // bin/kibana.bat 실행 (관리자 계정)
 
-### Win7sp1 32bit
+### [Win7sp1 32bit](#index)(VM)
 * Win7sp1 sysmon vm 환경 실행
 
 * Win7sp1 sysmon vm 환경에서 sysmon 서비스 실행(관리자 계정)
@@ -70,7 +70,7 @@
 * Win7sp1 sysmon vm 환경에서 winlogbeat 실행(관리자 계정)
   > winlogbeat.exe -c winlogbeat.yml
 
-### Ubuntu 18.04 64bit
+### [Ubuntu 18.04 64bit](#index)(VM)
 * Ubuntu 18.04 64bit 환경에서 Elasticalert 실행
   >/elastalert  
   >python3 -m elastalert.elastalert --verbose --start  --config <config.yaml> --rule <error.yaml>
