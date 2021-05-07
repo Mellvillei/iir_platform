@@ -4,7 +4,7 @@
 ### Install
   > [HOST PC](#host-pc)
   > [Windows](#windows-7-32bit)
-  > [Ubuntu](#ubuntu-18.04-64bit)
+  > [Ubuntu](#ubuntu-1804-64bit)
 ### 실행방법
   > [HOST PC](#host-pc)
 ### Config 설정
