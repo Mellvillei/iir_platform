@@ -1,8 +1,8 @@
 # Intelligent Incident Response Platform
 
-* index
+## Index
 
-[tl1qkf])(#t-l-q-k-f)
+* [tl1qkf](#tlqkf)
 
 ##  목표 구성도 참고 
 * Open Source Endpoint monitoring 
@@ -43,7 +43,7 @@
 
 
 
-[t l q k f](#index)
+[tlqkf](#index)
 
 
 ##  실행 방법 
