@@ -1,13 +1,13 @@
 # Intelligent Incident Response Platform
 
+* index
 
-[a a](#b-b)
-
+[tl1qkf])(#t-l-q-k-f)
 
 ##  목표 구성도 참고 
 * Open Source Endpoint monitoring 
   - https://github.com/DearBytes/Opensource-Endpoint-Monitoring
-  
+
 ##  시스템 구성도 
 
    ![screenshot](Conceptual_diagram.jpg)
@@ -23,16 +23,17 @@
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
     > https://github.com/SwiftOnSecurity/sysmon-config
     
-* Elastic Stack 64bit (Server 환경) - Host
-  - Elastic Logstach (Optional) 설치
-    > https://www.elastic.co/kr/downloads/logstash
+### HOST PC
+* Elastic Stack
+  - Elastic Elasticsearch 설치 ( 본 글은 7.11.2 version 사용. )
+    > https://www.elastic.co/kr/downloads/past-releases#elasticsearch
 
-  - Elastic Elasticsearch 설치
-    > https://www.elastic.co/kr/downloads/elasticsearch
-
-  - Elastic Kibana 설치
+  - Elastic Kibana 설치 ( 본 글은 7.11.2 version 사용.) # elasticsearch와 동일 버전을 사용하는 것이 좋음.
     > https://www.elastic.co/kr/downloads/kibana
 
+  - Elastic Logstash (Optional) 설치
+    > https://www.elastic.co/kr/downloads/logstash
+   
 * Ubuntu 18.04 64bit 환경
   - Yelp의 elastalert
     > https://github.com/Yelp/elastalert
@@ -40,10 +41,13 @@
   - elastalert 설치
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html
 
+
+
+[t l q k f](#index)
+
+
 ##  실행 방법 
-
-[b b](#a-a)
-
+(#hello)
 ### HOST PC
 * ElasticSearch // bin/elasticsearch.bat 실행 (관리자 계정)
 
