@@ -51,6 +51,9 @@
     > https://www.elastic.co/kr/downloads/logstash
    
 ### [Win7sp1 32bit](#index)(VM)
+  - python 2.7 version 32bit
+    > https://www.python.org/download/releases/2.7/
+
   - Red Team Automation (Red Team용 MITRE ATT@CK 기반 malicious attack 발생)
     > https://github.com/endgameinc/RTA 
     > (현 github 내 red_ttp_ko를 다운로드 해도 됨.)
