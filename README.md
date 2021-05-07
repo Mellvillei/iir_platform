@@ -1,7 +1,7 @@
 # Intelligent Incident Response Platform
 
 
-[a](#b)
+[a a](#b-b)
 
 
 ##  목표 구성도 참고 
@@ -42,7 +42,7 @@
 
 ##  실행 방법 
 
-[b](#a)
+[b b](#a-a)
 
 ### HOST PC
 * ElasticSearch // bin/elasticsearch.bat 실행 (관리자 계정)
