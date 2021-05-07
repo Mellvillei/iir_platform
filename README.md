@@ -1,7 +1,7 @@
 # Intelligent Incident Response Platform
 
 ## Index
-### [Install](#install)
+### [Install](#how-to-install)
   > [HOST PC](#host-pc)
   > [Ubuntu](#ubuntu-1804-64bit)
 ### [실행방법](#how-to-run)
@@ -25,7 +25,7 @@
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
     > https://github.com/SwiftOnSecurity/sysmon-config
 
-## INSTALL(#index)
+## How To INSTALL(#index)
 ### HOST PC(#index)
 * Elastic Stack
   - Elastic Elasticsearch 설치 ( 본 글은 7.11.2 version 사용. )
