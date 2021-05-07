@@ -70,7 +70,7 @@
 
 ### [Ubuntu 18.04 64bit](#index)(VM)
   - python 3.6 version 설치
-    > apt install python3
+    > apt install python3 <br>
     > sudo apt install python3-pip
     
   - Yelp의 elastalert
