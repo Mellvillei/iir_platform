@@ -111,7 +111,7 @@
   > rule 기본 틀 : https://github.com/Yelp/elastalert/blob/master/example_rules/example_frequency.yaml 
  
 ## [TroubleShooting](#index)
- [[ windows 7 ]]
+ ### [[ windows 7 ]]
  * sysmon 10.x 실행 오류
    > kb2533623 설치 (wevtapi.dll 문제)
    
@@ -151,18 +151,18 @@
 	
      > \</WmiEvent\>
         
-[[ Elasticsearch ]] 
+### [[ Elasticsearch ]] 
 * network.host 설정 bootstrap checks failed
   > https://soye0n.tistory.com/178
 
 
-[[ Elastalert ]]
+### [[ Elastalert ]]
 * pip install 오류
   > python version 3.6 다운 <br>
   > python으로 실행 안될 시 pip 오류 설정 확인 후 python3 버전으로 설치 <br>
   > python3 으로 실행해본 후 여전히 안될 시 기본으로 설정된 python의 버전 설정을 바꾼다. <br>
   > 
-[[ Ubuntu ]] 
+### [[ Ubuntu ]] 
 * yum repolist 0 이라는 오류가 출력될 때  : https://gogoonbuntu.tistory.com/17
 
 ## Contributors
