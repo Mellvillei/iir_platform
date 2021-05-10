@@ -33,7 +33,7 @@
   - Red Team Automation (Red Team용 MITRE ATT@CK 기반 malicious attack 발생)
   - SwiftOnSecurity의 sysmon-config (보안로그 발생을 위한 sysmon 환경 파일)
   
-* Ubuntu 18.04 64bit
+* Ubuntu 18.04 64bit - VM
   - Elastalert 0.2.4 version (git clone 사용)
   - python3 
   - pip3
