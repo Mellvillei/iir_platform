@@ -156,7 +156,6 @@
   > https://soye0n.tistory.com/178
 
 ### [[ Ubuntu ]] 
-* yum repolist 0 이라는 오류가 출력될 때  : https://gogoonbuntu.tistory.com/17
 * pip install 오류
   > python version 3.6 다운 <br>
   > python으로 실행 안될 시 pip 오류 설정 확인 후 python3 버전으로 설치 <br>
