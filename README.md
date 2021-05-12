@@ -9,7 +9,7 @@
   - [HOST PC](#host-pc-1)
   - [Windows](#win7sp1-32bitvm-1)
   - [Ubuntu](#ubuntu-1804-64bitvm-1)
-### Config 설정
+### [Config 설정](#config)
 ### [TroubleShooting](#troubleshooting-1)
 
 ##  목표 구성도 참고 
@@ -110,6 +110,15 @@
 * elastalert
   > https://elastalert.readthedocs.io/en/latest/running_elastalert.html <br>
   > rule 기본 틀 : https://github.com/Yelp/elastalert/blob/master/example_rules/example_frequency.yaml 
+  > 
+
+## [Config](#index)
+### [ElasticSearch](#index)
+### [Kibana](#index)
+### [Winlogbeat](#index)
+### [Elastalert](#index)
+### [Slack](#index)
+### [Sigma](#index)
  
 ## [TroubleShooting](#index)
  ### [[ windows 7 ]]
