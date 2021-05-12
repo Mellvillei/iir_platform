@@ -75,7 +75,7 @@
 
   - elastalert 설치
     > https://elastalert.readthedocs.io/en/latest/running_elastalert.html <br>
-    > 본 github 과정은 매뉴얼 내 pip install이 아닌 git clone을 통해 설치
+    > 본 github 과정은 매뉴얼 내 pip3 install이 아닌 git clone을 통해 설치
 
 ## How To Run
 ### [HOST PC](#index)
@@ -162,7 +162,13 @@
   > python으로 실행 안될 시 pip 오류 설정 확인 후 python3 버전으로 설치 <br>
   > python3 으로 실행해본 후 여전히 안될 시 기본으로 설정된 python의 버전 설정을 바꾼다. <br>
  
-* 
+* urllib3 (1.25.2) or chardet (3.0.4) 오류
+  > pip3 install request 
+  
+* module 'yaml' has no attribute 'FullLoader' 오류
+  > pip3 install -U PyYAML
+
+
 ## Contributors
 * maxup37
 * idk3669
