@@ -101,7 +101,8 @@
 ### [Ubuntu 18.04 64bit](#index)(VM)
 * Ubuntu 18.04 64bit 환경에서 Elasticalert 실행
   >/elastalert  <br>
-  >python3 -m elastalert.elastalert --verbose --start  --config <config.yaml> --rule <예제파일>  <br>
+  >python3 -m elastalert.elastalert --verbose --config <config.yaml> // (config.yaml 파일 내 rules_folder: <설정된폴더> 를 따라 룰 파일을 땡겨와 실행한다. 여러 룰 파일을 사용하고 싶으면 이 명령어를 사용한다. 본 매뉴얼을 처음 따라온다면 아래 명령어를 통해 따라한다.) <br>
+  >python3 -m elastalert.elastalert --verbose --start  --config <config.yaml> --rule <예제파일>  <br> // 특정 <예제파일>. 이 룰 파일만 설정해 실행한다. 
   > <config.yaml> 에 들어갈 설정 파일은 본 github 내 config.yaml 파일을 수정해서 사용한다. <br>
   > <예제파일>에 들어갈 룰 파일은 https://github.com/Yelp/elastalert/blob/master/example_rules/example_frequency.yaml 을 사용한다. (본 github 내 example_frequency.yaml을 사용해도 됨.)
  
@@ -118,10 +119,6 @@
   > rule 기본 틀 : https://github.com/Yelp/elastalert/blob/master/example_rules/example_frequency.yaml 
   > 
 
-* Slack
-  > https://marcusedmondson.com/2020/08/12/create-elastalert-rules-with-sigma/
-  > 
-
 ## Config
 ### [ElasticSearch](#index)
   > 설치폴더\config\elasticsearch.yml <br>
@@ -135,6 +132,16 @@
 ### [Elastalert](#index)
 ### [Slack](#index)
 ### [Sigma](#index)
+  > sudo pip3 install sigmatools <br>
+  > git clone https://github.com/Neo23x0/sigma.git <br>
+  > cd [시그마폴더](이하 sigma) <br> 
+  > cp -r rules/windows [복사를 원하는 경로] // 폴더 째로 복사해서 사본으로 룰을 제작할 예정. <br>
+  > sudo sigmac -t elastalert -r -c winlogbeat [위에서 복사한 경로] -o [원하는경로]/[설정할 파일이름] <br>
+  > -t 옵션 : elastalert을 타겟으로 설정, // -c 옵션 : winlogbeat 인덱스로 설정  // -o 옵션 : 원하는 파일 이름으로 설정되어서 나옴. // -r 옵션 : 디렉토리 내 서브디렉토리까지 전부. <br>
+  > 설정된 파일 하나에 룰 전부가 들어가 저장될 것인데, 여기서 룰 파일은 파일 내 여러 룰을 인식하지 못하고 마지막만 인식하기 때문에 나눠줘야 함. <br>
+  > csplit --prefix sigma_ --suffix-format "%04d.yml" rule "/^alert:/" "{*}" (sigmac 명령어를 통해 나온 파일이 있는 폴더에서 해야하며, 많은 파일이 나올 예정.) <br>
+  > sigma_0000.yml 파일로 여러개가 저장될 텐데, 전부 elastalert 내 rule 폴더에 넣어준다. <br>
+  > 
  
 ## [TroubleShooting](#index)
  ### [[ windows 7 ]]
@@ -193,12 +200,6 @@
 * module 'yaml' has no attribute 'FullLoader' 오류
   > pip3 install -U PyYAML
 
-* Slack 
-  > failed to open sigma 파일이라고 오류가 뜰 시 <br>
-  > sudo sigmac -t elastalert -c winlogbeat rules/windows/sysmon/sysmon_wmi_susp_scripting.yml > elastalert_sysmon_wmi_susp_scripting.ymㅣ가 아닌 <br>
-  > sudo sigmac -t elastalert -c winlogbeat ./rules/windows/wmi_event/sysmon_wmi_susp_scripting.yml > elastalert_sysmon_wmi_susp_scripting.yml 를 사용. <br>
-  > (현재 최신화 때문에 설정파일이 저장된 디렉토리가 변경됨.) <br>
-  > (sigma가 설치된 디렉토리에서 실행할 것.)
 
 ## Contributors
 * maxup37
