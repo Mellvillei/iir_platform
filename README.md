@@ -118,6 +118,10 @@
   > rule 기본 틀 : https://github.com/Yelp/elastalert/blob/master/example_rules/example_frequency.yaml 
   > 
 
+* Slack
+  > https://marcusedmondson.com/2020/08/12/create-elastalert-rules-with-sigma/
+  > 
+
 ## Config
 ### [ElasticSearch](#index)
   > 설치폴더\config\elasticsearch.yml <br>
@@ -189,6 +193,12 @@
 * module 'yaml' has no attribute 'FullLoader' 오류
   > pip3 install -U PyYAML
 
+* Slack 
+  > failed to open sigma 파일이라고 오류가 뜰 시 <br>
+  > sudo sigmac -t elastalert -c winlogbeat rules/windows/sysmon/sysmon_wmi_susp_scripting.yml > elastalert_sysmon_wmi_susp_scripting.ymㅣ가 아닌 <br>
+  > sudo sigmac -t elastalert -c winlogbeat ./rules/windows/wmi_event/sysmon_wmi_susp_scripting.yml > elastalert_sysmon_wmi_susp_scripting.yml 를 사용. <br>
+  > (현재 최신화 때문에 설정파일이 저장된 디렉토리가 변경됨.) <br>
+  > (sigma가 설치된 디렉토리에서 실행할 것.)
 
 ## Contributors
 * maxup37
