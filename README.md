@@ -120,6 +120,12 @@
 
 ## Config
 ### [ElasticSearch](#index)
+  > 설치폴더\config\elasticsearch.yml <br>
+  > #------ Network ----- <br>
+  > network.host: <host pc IP> <br>
+  > 포트는 기본적으로 설정되어있는 9200 사용할 예정이므로 주석제거 안함. <br>
+  > #------ Discovery ----- <br>
+  > discovery.seed_hosts: ["127.0.0.1, "[::1]"]
 ### [Kibana](#index)
 ### [Winlogbeat](#index)
 ### [Elastalert](#index)
