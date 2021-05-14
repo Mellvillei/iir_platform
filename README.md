@@ -137,7 +137,10 @@
   > cd [시그마폴더](이하 sigma) <br> 
   > cp -r rules/windows [복사를 원하는 경로] // 폴더 째로 복사해서 사본으로 룰을 제작할 예정. <br>
   > sudo sigmac -t elastalert -r -c winlogbeat [위에서 복사한 경로] -o [원하는경로]/[설정할 파일이름] <br>
-  > -t 옵션 : elastalert을 타겟으로 설정, // -c 옵션 : winlogbeat 인덱스로 설정  // -o 옵션 : 원하는 파일 이름으로 설정되어서 나옴. // -r 옵션 : 디렉토리 내 서브디렉토리까지 전부. <br>
+  > -t 옵션 : elastalert을 타겟으로 설정 <br>
+  > -c 옵션 : winlogbeat 인덱스로 설정 <br>
+  > -o 옵션 : 원하는 파일 이름으로 설정되어서 나옴. <br>
+  > -r 옵션 : 디렉토리 내 서브디렉토리까지 전부. <br>
   > 설정된 파일 하나에 룰 전부가 들어가 저장될 것인데, 여기서 룰 파일은 파일 내 여러 룰을 인식하지 못하고 마지막만 인식하기 때문에 나눠줘야 함. <br>
   > csplit --prefix sigma_ --suffix-format "%04d.yml" rule "/^alert:/" "{*}" (sigmac 명령어를 통해 나온 파일이 있는 폴더에서 해야하며, 많은 파일이 나올 예정.) <br>
   > sigma_0000.yml 파일로 여러개가 저장될 텐데, 전부 elastalert 내 rule 폴더에 넣어준다. <br>
