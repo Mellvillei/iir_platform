@@ -138,7 +138,7 @@
   > elasticsearch.hosts: ["http://[elasticsearch를 실행한 PC IP]:[포트]"] // elasticsearch를 실행할 호스트 PC의 IP를 설정해 준다. <br>
 ### [Winlogbeat](#index)
   * Win7sp VM
-  > # -------- Elasticsearch Output ----- <br>
+  > #-------- Elasticsearch Output ----- <br>
   > hosts: ["HOST PC IP:PORT"] <br>
   > 이미 winlogbeat 서비스가 실행되고 있을 때 변경해줬다면 서비스를 다시 시작하면 되며, 아니라면 설치 진행을 . <br>
 ### [Elastalert](#index)
