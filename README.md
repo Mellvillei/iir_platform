@@ -117,18 +117,30 @@
 * elastalert
   > https://elastalert.readthedocs.io/en/latest/running_elastalert.html <br>
   > rule 기본 틀 : https://github.com/Yelp/elastalert/blob/master/example_rules/example_frequency.yaml 
-  > 
 
 ## Config
+* 기본적으로 맨 앞에 #은 주석이므로 그 라인을 사용하려면 제거해야함. 
+* [] <- 이 괄호 내에 한글이 있으면 예시이므로 괄호 포함해서 걸러보면 되며, 영어가 포함되어있으면 괄호도 포함해서 설정한다.
+* ex.) [호스트 PC IP] -> 192.0.0.1  ,  [host pc ip] -> [192.0.0.1]  
 ### [ElasticSearch](#index)
+  * HOST PC
   > 설치폴더\config\elasticsearch.yml <br>
   > #------ Network ----- <br>
   > network.host: <host pc IP> <br>
   > 포트는 기본적으로 설정되어있는 9200 사용할 예정이므로 주석제거 안함. <br>
   > #------ Discovery ----- <br>
-  > discovery.seed_hosts: ["127.0.0.1, "[::1]"]
+  > discovery.seed_hosts: ["127.0.0.1, "[::1]"] 
 ### [Kibana](#index)
+  * HOST PC
+  > 설치폴더\config\kibana.yml <br>
+  > #server.port: 5601  (기본으로 설정되어있는 포트며 변경하지 않는다.) <br>
+  > server.host: "host pc ip"  // 키바나를 실행한 PC의 IP를 설정해 준다. <br>
+  > elasticsearch.hosts: ["http://[elasticsearch를 실행한 PC IP]:[포트]"] // elasticsearch를 실행할 호스트 PC의 IP를 설정해 준다. <br>
 ### [Winlogbeat](#index)
+  * Win7sp VM
+  > # -------- Elasticsearch Output ----- <br>
+  > hosts: ["HOST PC IP:PORT"] <br>
+  > 이미 winlogbeat 서비스가 실행되고 있을 때 변경해줬다면 서비스를 다시 시작하면 되며, 아니라면 설치 진행을 . <br>
 ### [Elastalert](#index)
 ### [Slack](#index)
 ### [Sigma](#index)
@@ -186,6 +198,11 @@
      > **삭제** 
 	
      > \</WmiEvent\>
+     > 
+
+* Winlogbeat
+  > config 설정 후 kibana에 Sysmon 로그가 안뜸 <br>
+  > = 서비스에 들어가 winlogbeat 서비스를 다시 시작합니다.
         
 ### [[ Elasticsearch ]] 
 * network.host 설정 bootstrap checks failed
@@ -202,6 +219,7 @@
   
 * module 'yaml' has no attribute 'FullLoader' 오류
   > pip3 install -U PyYAML
+  >
 
 
 ## Contributors
