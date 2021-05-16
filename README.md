@@ -140,8 +140,11 @@
   * Win7sp VM
   > #-------- Elasticsearch Output ----- <br>
   > hosts: ["HOST PC IP:PORT"] <br>
-  > 이미 winlogbeat 서비스가 실행되고 있을 때 변경해줬다면 서비스를 다시 시작하면 되며, 아니라면 설치 진행을 . <br>
+  > 이미 winlogbeat 서비스가 실행되고 있을 때 변경해줬다면 서비스를 다시 시작하면 되며, 아니라면 설치 진행 <br>
 ### [Elastalert](#index)
+  > git clone해서 나온 elastalert 디렉토리 내/config.yaml  // config.yaml이 없다면 config.yaml.example이 있을텐데, 복사 후 뒤에 .example을 지우고 사용한다.<br>
+  > es_host: [호스트 PC IP] <br>
+  > 
 ### [Slack](#index)
 ### [Sigma](#index)
   > sudo pip3 install sigmatools <br>
