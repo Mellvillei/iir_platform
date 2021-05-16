@@ -142,9 +142,11 @@
   > hosts: ["HOST PC IP:PORT"] <br>
   > 이미 winlogbeat 서비스가 실행되고 있을 때 변경해줬다면 서비스를 다시 시작하면 되며, 아니라면 설치 진행 <br>
 ### [Elastalert](#index)
+  * Ubuntu 18.04 VM
   > git clone해서 나온 elastalert 디렉토리 내/config.yaml  // config.yaml이 없다면 config.yaml.example이 있을텐데, 복사 후 뒤에 .example을 지우고 사용한다.<br>
   > es_host: [호스트 PC IP] <br>
-  > 
+  > rules_folder: rule이 들어간 디렉토리 지정 <br>
+  > --rule 속성을 사용한다면 룰 파일 하나를 정해주지만, --rule 속성을 주지않으면 이 rules_folder에 정해진 디렉토리가 기본으로 지정되어 디렉토리 내 룰들을 로드한다. <br>
 ### [Slack](#index)
 ### [Sigma](#index)
   > sudo pip3 install sigmatools <br>
