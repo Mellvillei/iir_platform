@@ -147,6 +147,11 @@
   > es_host: [호스트 PC IP] <br>
   > rules_folder: rule이 들어간 디렉토리 지정 <br>
   > --rule 속성을 사용한다면 룰 파일 하나를 정해주지만, --rule 속성을 주지않으면 이 rules_folder에 정해진 디렉토리가 기본으로 지정되어 디렉토리 내 룰들을 로드한다. <br>
+  * rule 파일 결과를 로그로 내보내기
+	> rule 하나를 선택 ( 본 과정에서는 example_frequency 사용 ) <br>
+	> pipe_match_json: true <br>
+	> command: "tee -a [정해줄 디렉토리경로]/[파일이름]-$(date '+%%d-%%m-%%Y').log" // 맨 아래에 입력 <br>
+	> 결과는 다음과 같이 나온다 -> [파일이름]-18-05-2021.log // 뒤 날짜는 로그가 잡히는 날짜마다 바뀐다. 
 ### [Slack](#index)
 ### [Sigma](#index)
   > sudo pip3 install sigmatools <br>
