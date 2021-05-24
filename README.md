@@ -164,9 +164,8 @@
 	> 설정이 된다면 webhook URL이 표시될 것이다. <br>
 	> ubuntuVM을 실행, elastalert rule디렉토리로 들어가 임의로 실행할 룰 파일을 하나 고른다. ( 본 과정에서는 example_frequency 사용 ) <br>
 	> 아래 양식에 맞춰 룰 파일 내 맨 아래 줄에 입력한다. <br>
-	
 	alert: 	
-	- slack: 	
+	[-] slack: <- [] 없이 - 만 입력
         	slack_webhook_url: "(복사한 웹후크 URL)" <br>
         	slack_username_override: "ZEUS" <br>
          	slack_channel_override: "#monitoring" <br>
