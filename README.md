@@ -169,7 +169,7 @@
         > 	slack_webhook_url: "(복사한 웹후크 URL)" <br>
         >	slack_username_override: "ZEUS" <br>
         > 	slack_channel_override: "#monitoring" <br>
-        > 	slack_emoji_override: ":zap:" <br>
+        > 	slack_emoji_override: ":,zap,:"   <- , 제거해서 입력 <br>
         > 	slack_msg_color: "danger" <br>
 	> 실행 // elastalert --verbose --config config.yaml --rule example_rules/example_frequency <br> 
 	> 설정된 룰에 따라 Alert을 발생시키면 Slack에 메시지가 뜨게 된다. <br>
