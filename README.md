@@ -170,7 +170,7 @@
         	slack_webhook_url: "(복사한 웹후크 URL)" 
         	slack_username_override: "ZEUS" 
          	slack_channel_override: "#monitoring" 
-         	slack_emoji_override: ":zap:"   <- , 제거해서 입력 
+         	slack_emoji_override: ":zap:" 
          	slack_msg_color: "danger"
 	```
 	
