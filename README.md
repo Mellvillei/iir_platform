@@ -163,14 +163,14 @@
 	> 메시지를 표시 할 채널을 선택 (ex #(만든채널) 앞에 #이 아니고 자물쇠 모양이래도 상관없음.) <br>
 	> 설정이 된다면 webhook URL이 표시될 것이다. <br>
 	> ubuntuVM을 실행, elastalert rule디렉토리로 들어가 임의로 실행할 룰 파일을 하나 고른다. ( 본 과정에서는 example_frequency 사용 ) <br>
-	> 아래 양식에 맞춰 룰 파일 내 맨 아래 줄에 입력한다.
-	* alert: 
-	* - slack: 
-        *	slack_webhook_url: "(복사한 웹후크 URL)" <br>
-        *	slack_username_override: "ZEUS" <br>
-        * 	slack_channel_override: "#monitoring" <br>
-        * 	slack_emoji_override: ":,zap,:"   <- , 제거해서 입력 <br>
-        * 	slack_msg_color: "danger" <br>
+	> 아래 양식에 맞춰 룰 파일 내 맨 아래 줄에 입력한다. <br>
+	alert: <br>
+	- slack: <br>
+        	slack_webhook_url: "(복사한 웹후크 URL)" <br>
+        	slack_username_override: "ZEUS" <br>
+         	slack_channel_override: "#monitoring" <br>
+         	slack_emoji_override: ":,zap,:"   <- , 제거해서 입력 <br>
+         	slack_msg_color: "danger" <br>
 	> 실행 // elastalert --verbose --config config.yaml --rule example_rules/example_frequency <br> 
 	> 설정된 룰에 따라 Alert을 발생시키면 Slack에 메시지가 뜨게 된다. <br>
 ### [Sigma](#index)
