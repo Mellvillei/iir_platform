@@ -165,13 +165,13 @@
 	> ubuntuVM을 실행, elastalert rule디렉토리로 들어가 임의로 실행할 룰 파일을 하나 고른다. ( 본 과정에서는 example_frequency 사용 ) <br>
 	> 아래 양식에 맞춰 룰 파일 내 맨 아래 줄에 입력한다. <br>
 	```
-	> alert: 	<br>
-	> &#45; slack: <br>
-        	slack_webhook_url: "(복사한 웹후크 URL)" <br>
-        	slack_username_override: "ZEUS" <br>
-         	slack_channel_override: "#monitoring" <br>
-         	slack_emoji_override: ":,zap,:"   <- , 제거해서 입력 <br>
-         	slack_msg_color: "danger" <br>
+	alert: 	
+	- slack: 
+        	slack_webhook_url: "(복사한 웹후크 URL)" 
+        	slack_username_override: "ZEUS" 
+         	slack_channel_override: "#monitoring" 
+         	slack_emoji_override: ":zap:"   <- , 제거해서 입력 
+         	slack_msg_color: "danger"
 	```
 	
 	> 실행 // elastalert --verbose --config config.yaml --rule example_rules/example_frequency <br> 
