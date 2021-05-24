@@ -153,6 +153,26 @@
 	> command: "tee -a [정해줄 디렉토리경로]/[파일이름]-$(date '+%%d-%%m-%%Y').log" // 맨 아래에 입력 <br>
 	> 결과는 다음과 같이 나온다 -> [파일이름]-18-05-2021.log // 뒤 날짜는 로그가 잡히는 날짜마다 바뀐다. 
 ### [Slack](#index)
+  * Slack 설치 -> https://slack.com/intl/ko-kr/downloads/windows
+  * Slack App생성 -> https://api.slack.com/apps?
+	> 사용하는 E메일 입력 후 메일 받아서 로그인. <br>
+	> 워크스페이스를 새로 만든다. <br>
+	> -- Incoming WebHook 설정 -- <br>
+	> 방법1 // https://XXXXX(만든 워크스페이스의 이름).slack.com/services/new/incoming-webhook 접속 <br>
+	> 방법2 // Slack 프로그램 내 새로만든 워크스테이션에서 Slack 찾아보기 -> 앱 -> Webhook 검색 후 구성, 추가 <br>
+	> 메시지를 표시 할 채널을 선택 (ex #(만든채널) 앞에 #이 아니고 자물쇠 모양이래도 상관없음.) <br>
+	> 설정이 된다면 webhook URL이 표시될 것이다. <br>
+	> ubuntuVM을 실행, elastalert rule디렉토리로 들어가 임의로 실행할 룰 파일을 하나 고른다. ( 본 과정에서는 example_frequency 사용 ) <br>
+	> 아래 양식에 맞춰 룰 파일 내 맨 아래 줄에 입력한다.
+	> alert: <br>
+	> - slack: <br>
+        > 	slack_webhook_url: "(복사한 웹후크 URL)" <br>
+        >	slack_username_override: "ZEUS" <br>
+        > 	slack_channel_override: "#monitoring" <br>
+        > 	slack_emoji_override: ":zap:" <br>
+        > 	slack_msg_color: "danger" <br>
+	> 실행 // elastalert --verbose --config config.yaml --rule example_rules/example_frequency <br> 
+	> 설정된 룰에 따라 Alert을 발생시키면 Slack에 메시지가 뜨게 된다. <br>
 ### [Sigma](#index)
   > sudo pip3 install sigmatools <br>
   > git clone https://github.com/Neo23x0/sigma.git <br>
@@ -228,8 +248,13 @@
   > pip3 install request 
   
 * module 'yaml' has no attribute 'FullLoader' 오류
-  > pip3 install -U PyYAML
-  >
+  > pip3 install -U PyYAML 
+ 
+* pkg_resources.DistributionNotFound: The 'elasticsearch' distribution was not found and is required by elastalert 오류
+  > sudo pip3 install "elasticsearch>=5.0.0,<7.0.0"
+  
+* ImportError: cannot import name main
+  > pip3 install "elasticsearch>=5.0.0,<7.0.0"
 
 
 ## Contributors
