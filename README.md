@@ -173,6 +173,7 @@
          	slack_emoji_override: ":zap:" 
          	slack_msg_color: "danger"
 	```
+	* 앞에 공백은 tab키 사용하지 않고 space로 공백을 만든다.
 	
 	> 실행 // elastalert --verbose --config config.yaml --rule example_rules/example_frequency <br> 
 	> 설정된 룰에 따라 Alert을 발생시키면 Slack에 메시지가 뜨게 된다. <br>
