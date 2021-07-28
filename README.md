@@ -147,6 +147,11 @@
   > es_host: [호스트 PC IP] <br>
   > rules_folder: rule이 들어간 디렉토리 지정 <br>
   > --rule 속성을 사용한다면 룰 파일 하나를 정해주지만, --rule 속성을 주지않으면 이 rules_folder에 정해진 디렉토리가 기본으로 지정되어 디렉토리 내 룰들을 로드한다. <br>
+  * /elastalert
+python3 -m elastalert.elastalert --verbose --config <config.yaml> // (config.yaml 파일 내 rules_folder: <설정된폴더> 를 따라 룰 파일을 땡겨와 실행한다. 여러 룰 파일을 사용하고 싶으면 이 명령어를 사용한다. 본 매뉴얼을 처음 따라온다면 아래 명령어를 통해 따라한다.)
+python3 -m elastalert.elastalert --verbose --start --config <config.yaml> --rule <예제파일>
+// 특정 <예제파일>. 이 룰 파일만 설정해 실행한다. <config.yaml> 에 들어갈 설정 파일은 본 github 내 config.yaml 파일을 수정해서 사용한다.
+<예제파일>에 들어갈 룰 파일은 https://github.com/Yelp/elastalert/blob/master/example_rules/example_frequency.yaml 을 사용한다. (본 github 내 example_frequency.yaml을 사용해도 됨.	
   * rule 파일 결과를 로그로 내보내기
 	> rule 하나를 선택 ( 본 과정에서는 example_frequency 사용 ) <br>
 	> pipe_match_json: true <br>
