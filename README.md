@@ -259,6 +259,9 @@
   
 * ImportError: cannot import name main
   > pip3 install "elasticsearch>=5.0.0,<7.0.0"
+	 
+* elastalert 룰 실행 시 vm -> host로 timed out 뜰 시
+  > wifi를 사용하는 지 확인하고, 공용 네트워크로 연결되어 있는 지 확인. 개인 네트워크로 사용해야 timed out이 뜨지 않음.
 
 
 ## Contributors
